@@ -1,1 +1,14 @@
-<p>filter works!</p>
+<div class="radio-buttons d-flex justify-content-center"  >
+    <label>
+      <input type="radio" name="option" value="all" [ngModel]=""> All
+    </label>
+    <div>({{all}})</div>
+    <label>
+      <input type="radio" name="option" value="true"> InStock
+    </label>
+    <div>({{instock}})</div>
+    <label>
+      <input type="radio" name="option" value="false"> OutOfStock
+    </label>
+    <div>({{outOfStock}})</div>
+  </div>

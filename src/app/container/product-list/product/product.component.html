@@ -1,25 +1,20 @@
-<!-- <p>product works!</p>
-<div class="product--detail">
-    <h2>Product Details</h2>
-    <div class="ekart--product--item">
-        <div class="ekart-wishlist-sale-container">
-            <div class="ekart--add--to--wishlist">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </div>
-            
-          </div>
-          <div class="ekart--product--image">
-              <img [src]="prod.imageURL" class="ekart--product--image">
-          </div>
-          <div class="ekart--add--to--price">
-              {{prod.price}}
-          </div>
-          <div class="ekart--product--name">{{prod.name}}</div>
-          <div class="ekart--product--category">{{prod.gender}} . {{prod.category}} . {{prod.brand}}</div>
-          <div class="ekart--product--available-colors">{{prod.color.length}} Colors . Best Seller</div>
-          <div class="--stock" [ngStyle]="{color:prod.is_in_inventory?'green':'red'}">
-            {{prod.is_in_inventory? 'In Stock' : 'Out of Stock'}}
-          </div>
+<div class="ekart--product--item">
+  <div class="ekart-wishlist-sale-container">
+      <div class="ekart--add--to--wishlist">
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      
     </div>
-
-</div> -->
+    <div class="ekart--product--image">
+        <img [src]="product.imageURL" class="ekart--product--image">
+    </div>
+    <div class="ekart--add--to--price">
+        {{product.price}}
+    </div>
+    <div class="ekart--product--name">{{product.name}}</div>
+    <div class="ekart--product--category">{{product.gender}} . {{product.category}} . {{product.brand}}</div>
+    <div class="ekart--product--available-colors">{{product.color.length}} Colors . Best Seller</div>
+    <div class="--stock" [ngStyle]="{color:product.is_in_inventory?'green':'red'}">
+      {{product.is_in_inventory? 'In Stock' : 'Out of Stock'}}
+    </div>
+</div>

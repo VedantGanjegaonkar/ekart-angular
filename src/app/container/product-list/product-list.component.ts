@@ -534,4 +534,13 @@ export class ProductListComponent {
     }
   ];
 
+  selectedFilterValue:string='all'
+
+  onChangeVal(filterValue){
+    
+    console.log(filterValue);
+    
+    this.selectedFilterValue = filterValue;
+  }
+
 }
