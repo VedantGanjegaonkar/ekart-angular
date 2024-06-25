@@ -1,14 +1,17 @@
 <div class="radio-buttons d-flex justify-content-center"  >
     <label>
-      <input type="radio" name="option" value="all" [ngModel]=""> All
+      <input type="radio" name="option" value="all" [(ngModel)]="selectedFilterValue"
+       (change)="onfilterValueChange()" > All
     </label>
     <div>({{all}})</div>
     <label>
-      <input type="radio" name="option" value="true"> InStock
+      <input type="radio" name="option" value="true" [(ngModel)]="selectedFilterValue" 
+      (change)="onfilterValueChange()" > InStock
     </label>
     <div>({{instock}})</div>
     <label>
-      <input type="radio" name="option" value="false"> OutOfStock
+      <input type="radio" name="option" value="false" [(ngModel)]="selectedFilterValue" 
+      (change)="onfilterValueChange()" > OutOfStock
     </label>
     <div>({{outOfStock}})</div>
   </div>

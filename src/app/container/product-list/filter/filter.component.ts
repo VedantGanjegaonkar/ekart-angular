@@ -30,9 +30,18 @@ export class FilterComponent  {
   outOfStock:number=0
 
 @Output()
-  filterchanged=new EventEmitter()
+  filterchanged=new EventEmitter<string>()
 
+   selectedFilterValue:string='all'
 
+  onfilterValueChange(){
+
+    console.log("from child:",this.selectedFilterValue);
+    
+    this.filterchanged.emit(this.selectedFilterValue)
+  }
+
+ 
 ngOnInit(){
 
   this.all= this.productsForFilter.length

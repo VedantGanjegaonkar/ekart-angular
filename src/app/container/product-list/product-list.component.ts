@@ -534,13 +534,16 @@ export class ProductListComponent {
     }
   ];
 
+  all:number=this.products.length
+  inStock:number=this.products.filter(p=>p.is_in_inventory==true).length
+  outOfstock:number=this.products.filter(p=>p.is_in_inventory==false).length
+
   selectedFilterValue:string='all'
 
   onChangeVal(filterValue){
     
-    console.log(filterValue);
-    
     this.selectedFilterValue = filterValue;
+    console.log("from pararnt selectred filter ",this.selectedFilterValue);
   }
 
 }
